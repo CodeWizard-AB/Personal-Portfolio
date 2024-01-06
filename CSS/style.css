@@ -25,8 +25,9 @@
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.logo-brand h2 {
-	color: var(--GRAY-7);
+.logo-brand h1 a {
+	color: #fab005;
+	text-shadow: -7px 5px 7px rgba(0, 0, 0, 0.178);
 	text-transform: uppercase;
 }
 
