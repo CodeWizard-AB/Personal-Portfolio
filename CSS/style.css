@@ -84,8 +84,6 @@
 	width: 100%;
 	border-radius: 1rem;
 	filter: brightness(0.8);
-	clip-path: circle(44.6% at 48% 44%);
-	/* clip-path: inset(5% 11% 2% 6%); */
 }
 
 .main-heading {
