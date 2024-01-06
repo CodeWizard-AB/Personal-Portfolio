@@ -2,7 +2,7 @@
 
 // ? ELEMENT SELECTIONS:
 
-const headerEl = document.querySelector("header");
+const headerEl = document.querySelector(".header-section");
 const skillSection = document.querySelector(".skills-section");
 const heroSection = document.querySelector(".hero-section");
 const btnSrollTo = document.querySelector(".hero-btn-2");
@@ -35,8 +35,10 @@ const headerObserver = new IntersectionObserver(
 		const [entry] = entries;
 		if (!entry.isIntersecting) {
 			headerEl.classList.add("header-sticky");
+			headerEl.classList.remove("container");
 		} else {
 			headerEl.classList.remove("header-sticky");
+			headerEl.classList.add("container");
 		}
 	},
 	{
@@ -59,7 +61,7 @@ btnSrollTo.addEventListener("click", function () {
 headerEl.addEventListener("click", function (e) {
 	e.preventDefault();
 	const id = e.target.getAttribute("href");
-	if (!id) return;	
+	if (!id) return;
 	document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 });
 
