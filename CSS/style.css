@@ -69,10 +69,6 @@
 	color: #fff;
 }
 
-/* ******************** */
-/* ? MAIN BODY STYLE */
-/* ******************** */
-
 /* ? HERO-SECTION  START */
 
 .hero-section {
@@ -87,6 +83,8 @@
 	width: 100%;
 	border-radius: 1rem;
 	filter: brightness(0.8);
+	clip-path: circle(44.6% at 48% 44%);
+	/* clip-path: inset(5% 11% 2% 6%); */
 }
 
 .main-heading {
@@ -135,12 +133,13 @@
 	background-color: transparent;
 	border: none;
 	animation: bounce 1s infinite;
+	cursor: pointer;
 }
 
 @keyframes bounce {
 	0%,
 	100% {
-		transform: translateY(-25%);
+		transform: translateY(-20%);
 		animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
 	}
 	50% {
@@ -191,6 +190,10 @@
 }
 
 /* ? HERO-SECTION END */
+
+/* ******************** */
+/* ? MAIN BODY STYLE */
+/* ******************** */
 
 /* ? SKILL SECTION START*/
 
