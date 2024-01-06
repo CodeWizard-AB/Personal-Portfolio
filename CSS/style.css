@@ -381,7 +381,53 @@
 /* ? EDUCATION SECTION START */
 
 .education-section {
-	height: 100vh;
+	padding: 15rem 0;
+	gap: 0 7rem;
+}
+
+.education-title > h2 {
+	line-height: 1.5;
+}
+
+.education-title > p {
+	line-height: 1.8;
+}
+
+.detail h3 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.detail h3::before {
+	position: absolute;
+	content: "";
+	width: 30px;
+	aspect-ratio: 1;
+	background-color: #fcb41f;
+	border-radius: 50%;
+	left: 0;
+	transform: translateX(-50%);
+}
+
+.detail p:nth-child(2) {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+.article-des {
+	font-size: 1.7rem;
+	margin-bottom: 4rem;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+.education-details {
+	padding-left: 5rem;
+	border-left: 1px solid var(--GRAY-4);
+	position: relative;
 }
 
 /* ? EDUCATION SECTION END */
